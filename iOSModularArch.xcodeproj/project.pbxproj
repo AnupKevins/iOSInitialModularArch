@@ -19,7 +19,7 @@
 		360382AE2C92FAED00D44556 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 360382AD2C92FAED00D44556 /* Swinject */; };
 		360382B02C92FAED00D44556 /* Swinject-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 360382AF2C92FAED00D44556 /* Swinject-Dynamic */; };
 		36D7B37B2C9816DF00FEB836 /* Insurance in Frameworks */ = {isa = PBXBuildFile; productRef = 36D7B37A2C9816DF00FEB836 /* Insurance */; };
-		36D7B37E2C98179100FEB836 /* Loan in Frameworks */ = {isa = PBXBuildFile; productRef = 36D7B37D2C98179100FEB836 /* Loan */; };
+		36D7B3812C98299F00FEB836 /* Credit in Frameworks */ = {isa = PBXBuildFile; productRef = 36D7B3802C98299F00FEB836 /* Credit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,7 +54,7 @@
 		3603829D2C92D24300D44556 /* iOSModularArchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSModularArchUITests.swift; sourceTree = "<group>"; };
 		3603829F2C92D24300D44556 /* iOSModularArchUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSModularArchUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		36D7B3782C9816BA00FEB836 /* Insurance */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Insurance; sourceTree = "<group>"; };
-		36D7B37C2C98177700FEB836 /* Loan */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Loan; sourceTree = "<group>"; };
+		36D7B37F2C98299400FEB836 /* Credit */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Credit; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,8 +63,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				36D7B37B2C9816DF00FEB836 /* Insurance in Frameworks */,
+				36D7B3812C98299F00FEB836 /* Credit in Frameworks */,
 				360382AE2C92FAED00D44556 /* Swinject in Frameworks */,
-				36D7B37E2C98179100FEB836 /* Loan in Frameworks */,
 				360382B02C92FAED00D44556 /* Swinject-Dynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -142,7 +142,7 @@
 		36D1474A2C94406300032464 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				36D7B37C2C98177700FEB836 /* Loan */,
+				36D7B37F2C98299400FEB836 /* Credit */,
 				36D7B3782C9816BA00FEB836 /* Insurance */,
 			);
 			path = Modules;
@@ -175,7 +175,7 @@
 				360382AD2C92FAED00D44556 /* Swinject */,
 				360382AF2C92FAED00D44556 /* Swinject-Dynamic */,
 				36D7B37A2C9816DF00FEB836 /* Insurance */,
-				36D7B37D2C98179100FEB836 /* Loan */,
+				36D7B3802C98299F00FEB836 /* Credit */,
 			);
 			productName = iOSModularArch;
 			productReference = 360382792C92D23F00D44556 /* iOSModularArch.app */;
@@ -671,9 +671,9 @@
 			isa = XCSwiftPackageProductDependency;
 			productName = Insurance;
 		};
-		36D7B37D2C98179100FEB836 /* Loan */ = {
+		36D7B3802C98299F00FEB836 /* Credit */ = {
 			isa = XCSwiftPackageProductDependency;
-			productName = Loan;
+			productName = Credit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
