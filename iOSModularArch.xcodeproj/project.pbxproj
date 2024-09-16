@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 60;
+	objectVersion = 56;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -52,6 +52,7 @@
 		360382992C92D24300D44556 /* iOSModularArchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSModularArchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3603829D2C92D24300D44556 /* iOSModularArchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSModularArchUITests.swift; sourceTree = "<group>"; };
 		3603829F2C92D24300D44556 /* iOSModularArchUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSModularArchUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		36D7B3772C98148500FEB836 /* Investment */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Investment; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +138,7 @@
 		36D1474A2C94406300032464 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				36D7B3772C98148500FEB836 /* Investment */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -236,7 +238,6 @@
 			mainGroup = 360382702C92D23F00D44556;
 			packageReferences = (
 				360382AC2C92FAED00D44556 /* XCRemoteSwiftPackageReference "Swinject" */,
-				36D7B3742C944E2A00FEB836 /* XCLocalSwiftPackageReference "../Investment" */,
 			);
 			productRefGroup = 3603827A2C92D23F00D44556 /* Products */;
 			projectDirPath = "";
@@ -630,13 +631,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCLocalSwiftPackageReference section */
-		36D7B3742C944E2A00FEB836 /* XCLocalSwiftPackageReference "../Investment" */ = {
-			isa = XCLocalSwiftPackageReference;
-			relativePath = ../Investment;
-		};
-/* End XCLocalSwiftPackageReference section */
 
 /* Begin XCRemoteSwiftPackageReference section */
 		360382AC2C92FAED00D44556 /* XCRemoteSwiftPackageReference "Swinject" */ = {
