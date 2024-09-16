@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -16,6 +16,9 @@
 		360382942C92D24300D44556 /* iOSModularArchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360382932C92D24300D44556 /* iOSModularArchTests.swift */; };
 		3603829E2C92D24300D44556 /* iOSModularArchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3603829D2C92D24300D44556 /* iOSModularArchUITests.swift */; };
 		360382A02C92D24300D44556 /* iOSModularArchUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3603829F2C92D24300D44556 /* iOSModularArchUITestsLaunchTests.swift */; };
+		360382AE2C92FAED00D44556 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 360382AD2C92FAED00D44556 /* Swinject */; };
+		360382B02C92FAED00D44556 /* Swinject-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 360382AF2C92FAED00D44556 /* Swinject-Dynamic */; };
+		36D7B3762C944E2A00FEB836 /* Investment in Frameworks */ = {isa = PBXBuildFile; productRef = 36D7B3752C944E2A00FEB836 /* Investment */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +59,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36D7B3762C944E2A00FEB836 /* Investment in Frameworks */,
+				360382AE2C92FAED00D44556 /* Swinject in Frameworks */,
+				360382B02C92FAED00D44556 /* Swinject-Dynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,6 +105,7 @@
 		3603827B2C92D23F00D44556 /* iOSModularArch */ = {
 			isa = PBXGroup;
 			children = (
+				36D1474A2C94406300032464 /* Modules */,
 				3603827C2C92D23F00D44556 /* AppDelegate.swift */,
 				3603827E2C92D23F00D44556 /* SceneDelegate.swift */,
 				360382802C92D23F00D44556 /* ViewController.swift */,
@@ -127,6 +134,13 @@
 			path = iOSModularArchUITests;
 			sourceTree = "<group>";
 		};
+		36D1474A2C94406300032464 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +157,11 @@
 			dependencies = (
 			);
 			name = iOSModularArch;
+			packageProductDependencies = (
+				360382AD2C92FAED00D44556 /* Swinject */,
+				360382AF2C92FAED00D44556 /* Swinject-Dynamic */,
+				36D7B3752C944E2A00FEB836 /* Investment */,
+			);
 			productName = iOSModularArch;
 			productReference = 360382792C92D23F00D44556 /* iOSModularArch.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +234,10 @@
 				Base,
 			);
 			mainGroup = 360382702C92D23F00D44556;
+			packageReferences = (
+				360382AC2C92FAED00D44556 /* XCRemoteSwiftPackageReference "Swinject" */,
+				36D7B3742C944E2A00FEB836 /* XCLocalSwiftPackageReference "../Investment" */,
+			);
 			productRefGroup = 3603827A2C92D23F00D44556 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -607,6 +630,41 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		36D7B3742C944E2A00FEB836 /* XCLocalSwiftPackageReference "../Investment" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../Investment;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		360382AC2C92FAED00D44556 /* XCRemoteSwiftPackageReference "Swinject" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Swinject/Swinject.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.9.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		360382AD2C92FAED00D44556 /* Swinject */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 360382AC2C92FAED00D44556 /* XCRemoteSwiftPackageReference "Swinject" */;
+			productName = Swinject;
+		};
+		360382AF2C92FAED00D44556 /* Swinject-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 360382AC2C92FAED00D44556 /* XCRemoteSwiftPackageReference "Swinject" */;
+			productName = "Swinject-Dynamic";
+		};
+		36D7B3752C944E2A00FEB836 /* Investment */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Investment;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 360382712C92D23F00D44556 /* Project object */;
 }
