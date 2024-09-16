@@ -18,8 +18,9 @@
 		360382A02C92D24300D44556 /* iOSModularArchUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3603829F2C92D24300D44556 /* iOSModularArchUITestsLaunchTests.swift */; };
 		360382AE2C92FAED00D44556 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 360382AD2C92FAED00D44556 /* Swinject */; };
 		360382B02C92FAED00D44556 /* Swinject-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 360382AF2C92FAED00D44556 /* Swinject-Dynamic */; };
-		36D7B37B2C9816DF00FEB836 /* Insurance in Frameworks */ = {isa = PBXBuildFile; productRef = 36D7B37A2C9816DF00FEB836 /* Insurance */; };
 		36D7B3812C98299F00FEB836 /* Credit in Frameworks */ = {isa = PBXBuildFile; productRef = 36D7B3802C98299F00FEB836 /* Credit */; };
+		36D7B3842C982A8F00FEB836 /* Debit in Frameworks */ = {isa = PBXBuildFile; productRef = 36D7B3832C982A8F00FEB836 /* Debit */; };
+		36D7B3872C982AD300FEB836 /* Common in Frameworks */ = {isa = PBXBuildFile; productRef = 36D7B3862C982AD300FEB836 /* Common */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,8 +54,9 @@
 		360382992C92D24300D44556 /* iOSModularArchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSModularArchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3603829D2C92D24300D44556 /* iOSModularArchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSModularArchUITests.swift; sourceTree = "<group>"; };
 		3603829F2C92D24300D44556 /* iOSModularArchUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSModularArchUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		36D7B3782C9816BA00FEB836 /* Insurance */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Insurance; sourceTree = "<group>"; };
 		36D7B37F2C98299400FEB836 /* Credit */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Credit; sourceTree = "<group>"; };
+		36D7B3822C982A8300FEB836 /* Debit */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Debit; sourceTree = "<group>"; };
+		36D7B3852C982ACC00FEB836 /* Common */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Common; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,8 +64,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				36D7B37B2C9816DF00FEB836 /* Insurance in Frameworks */,
+				36D7B3872C982AD300FEB836 /* Common in Frameworks */,
 				36D7B3812C98299F00FEB836 /* Credit in Frameworks */,
+				36D7B3842C982A8F00FEB836 /* Debit in Frameworks */,
 				360382AE2C92FAED00D44556 /* Swinject in Frameworks */,
 				360382B02C92FAED00D44556 /* Swinject-Dynamic in Frameworks */,
 			);
@@ -142,8 +145,9 @@
 		36D1474A2C94406300032464 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				36D7B3852C982ACC00FEB836 /* Common */,
+				36D7B3822C982A8300FEB836 /* Debit */,
 				36D7B37F2C98299400FEB836 /* Credit */,
-				36D7B3782C9816BA00FEB836 /* Insurance */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -174,8 +178,9 @@
 			packageProductDependencies = (
 				360382AD2C92FAED00D44556 /* Swinject */,
 				360382AF2C92FAED00D44556 /* Swinject-Dynamic */,
-				36D7B37A2C9816DF00FEB836 /* Insurance */,
 				36D7B3802C98299F00FEB836 /* Credit */,
+				36D7B3832C982A8F00FEB836 /* Debit */,
+				36D7B3862C982AD300FEB836 /* Common */,
 			);
 			productName = iOSModularArch;
 			productReference = 360382792C92D23F00D44556 /* iOSModularArch.app */;
@@ -667,13 +672,17 @@
 			package = 360382AC2C92FAED00D44556 /* XCRemoteSwiftPackageReference "Swinject" */;
 			productName = "Swinject-Dynamic";
 		};
-		36D7B37A2C9816DF00FEB836 /* Insurance */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = Insurance;
-		};
 		36D7B3802C98299F00FEB836 /* Credit */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = Credit;
+		};
+		36D7B3832C982A8F00FEB836 /* Debit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Debit;
+		};
+		36D7B3862C982AD300FEB836 /* Common */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Common;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
